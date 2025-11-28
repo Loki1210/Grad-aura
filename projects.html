@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grad-Aura</title>
+    <link rel="shortcut icon" href="images/banner.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- style css packages -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/title.png" alt="Project Center Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Our Projects</h1>
+            <p class="lead">Explore our portfolio of successful student projects</p>
+        </div>
+    </section>
+    <!-- DESCRIPTION + IMAGE (Left text, Right image) -->
+  <section class="container py-3" style="margin-bottom: 40px; margin-top: 30px;" >
+  <div class="row align-items-stretch g-3">
+
+    <!-- LEFT CONTENT -->
+    <div class="col-lg-7">
+      <div class="p-4 border rounded bg-white shadow-sm h-100">
+        <h4 class="mb-2">Project— What we deliver</h4>
+
+        <p>
+          At <spam style="color: rgb(36, 36, 91);">Grad</spam>-<spam style="color: gold;">Aura</spam>, every project is designed with a strong focus on real-world relevance,
+          academic excellence, and practical implementation. Our goal is to help students not just complete a
+          project, but truly understand the core concepts behind it — from identifying the problem to designing,
+          developing, testing and deploying the final solution.
+
+          <br><br>
+          Each project is built with a systematic workflow that includes requirement analysis, architecture design,
+          coding standards, documentation, and presentation preparation. Whether it’s a hardware-based embedded
+          system, a data-driven ML model, an IoT automation concept, a full-stack web application, or a mobile app,
+          we ensure that students gain hands-on experience with the latest tools and technologies used in the industry.
+
+          <br><br>
+          Our project library showcases a diverse set of completed works, each carefully crafted with clean code,
+          accurate results, and well-structured documentation. Students receive complete support including code
+          explanation, report writing, PPT creation, demo assistance and viva guidance — making their academic
+          submissions strong, confident and professional.
+
+          <br><br>
+          Explore the collection below to discover the innovation, creativity and technical expertise behind Grad-Aura’s
+          student projects.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- RIGHT IMAGE Equal Height -->
+    <div class="col-lg-5">
+      <div class="rounded shadow-sm h-100 overflow-hidden" style="background:#f7fbff;">
+        <img src="images/project.png"
+             alt="Projects"
+             style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+
+  </div>
+</section>
+<h2 class="text-center fw-bold mb-4" style="font-size: 2rem; color:#3123b4; margin: 20px; padding: 20px;">
+  Our Previous Projects
+</h2>>
+
+
+  <!-- FILTER BOX (boxed controls + animated) -->
+  <section class="container">
+    <div class="filter-box p-3 mb-4 shadow-sm rounded bg-white">
+      <div class="row g-2 align-items-center">
+        <div class="col-md-8">
+          <div class="d-flex flex-wrap gap-2">
+            <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="embedded">Embedded</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="iot">IoT</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="ds">Data Science</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="web">Web</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="app">App</button>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-md-end">
+          <div class="d-inline-flex gap-2">
+            <a class="btn btn-primary" href="contact.html"><i class="bi bi-envelope-fill me-1"></i>Request Project</a>
+            <a class="btn btn-outline-secondary" href="catalogue.pdf" download><i class="bi bi-download me-1"></i>Brochure</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS GRID (9 projects) -->
+  <section class="container mb-5" style="margin-top: 50px;">
+    <div id="projects-grid" class="row g-4">
+
+      <!-- Project 1 (ML) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="ml" data-id="p1">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/ai1.jpeg" class="card-img-top" alt="Online Payment Detection">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AI-Powered Disease Prediction</h5>
+            <p >A predictive ML system that analyzes patient data to identify disease risks with high accuracy.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">ML</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p1">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 (Web) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="ml" data-id="p2">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/ai2.jpeg" class="card-img-top" alt="Weather App">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Crop Disease Detection</h5>
+            <p >A vision-based model that detects plant diseases from leaf images using deep learning techniques.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">ML</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p2">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 (Embedded) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="web" data-id="p3">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/web1.jpg" class="card-img-top" alt="Line-following Robot">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Corporation Municipal Admin Dashboard</h5>
+            <p >A centralized dashboard for municipal authorities to manage citizen requests, services, and reports.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">Web</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p3">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 (IoT) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="app" data-id="p4">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/app1.jpeg" class="card-img-top" alt="Smart Garden">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Mental Well-Being App</h5>
+            <p >A supportive wellness app offering mood tracking, relaxation activities, and mental health resources..</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">App</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p4">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 (App) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="ds" data-id="p5">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/ai3.jpg" class="card-img-top" alt="Campus App">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Credit Card Fraud Detection</h5>
+            <p >An ML-driven fraud detection system that identifies suspicious transactions in real-time.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">Data science</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p5">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 (DS) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="web" data-id="p6">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/web2.jpg" class="card-img-top" alt="Customer Insights">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Attendance Management</h5>
+            <p >A digital system designed to record, track, and manage attendance efficiently with automated reporting.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">Web</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p6">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 (ML) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="embedded" data-id="p7">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/e1.png" class="card-img-top" alt="Air Quality Prediction">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">RFID-Based Inventory Management</h5>
+            <p >An RFID-powered inventory tracking solution for fast, contactless item scanning and stock updates.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">Embedded</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p7">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8 (Web) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="embedded" data-id="p8">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/e2.jpeg" class="card-img-top" alt="E-commerce">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Battery Monitoring System</h5>
+            <p >A sensor-driven monitoring unit that measures battery health, voltage, temperature, and charge status.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">Embedded</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p8">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 9 (Embedded) -->
+      <div class="col-sm-6 col-md-4 project-card" data-category="iot" data-id="p9">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/iot1.jpeg" class="card-img-top" alt="Home Automation">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Weather Station</h5>
+            <p >A multi-sensor IoT setup that measures temperature, humidity, and environmental factors in real-time.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">Embedded</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p9">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 project-card" data-category="iot" data-id="p10">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/iot2.jpeg" class="card-img-top" alt="Home Automation">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">IoT-Based Smart Home</h5>
+            <p >A home automation system that enables remote control of appliances through sensors and wireless modules.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">IOT</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p10">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 project-card" data-category="iot" data-id="p11">
+        <div class="card h-100 project-tile reveal">
+          <img src="images/project images/iot3.jpeg" class="card-img-top" alt="Home Automation">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Weather StationAutomated Smart Parking System</h5>
+            <p >An intelligent parking solution that detects vehicle presence, guides drivers to available slots, and automates billing.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <div class="tags"><span class="badge bg-light text-dark">IoT</span></div>
+              <div>
+                <button class="btn btn-sm btn-outline-primary view-btn" data-id="p11">View</button>
+                <!-- <a class="btn btn-sm btn-primary ms-1" href="#" target="_blank">Repo</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- add more projects by copying one block above and changing data-category & data-id -->
+
+    </div>
+  </section>
+
+  <!-- Project detail modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Project</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <img id="modalImage" src="images/ps.avif" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+              <h5 id="modalSubtitle" class="mb-2"></h5>
+              <p id="modalDesc"></p>
+              <p class="mb-2"><strong>Technologies:</strong> <span id="modalTech"></span></p>
+              <p class="mb-2"><strong>Deliverables:</strong> Code, Report, PPT, Demo</p>
+              <!-- <div class="d-flex gap-2 mt-3">
+                <a id="modalRepo" href="#" target="_blank" class="btn btn-primary">View Repo</a>
+                <a id="modalDownload" href="#" class="btn btn-outline-secondary">Download Report</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Call to Action Section -->
+    <section class="cta-wrapper" style="margin-top: 15px; margin-bottom: -30px;">
+        <div class="cta-box-centered">
+            <div class="cta-left-strip"></div>
+
+            <div class="cta-content">
+                <h3>For Best Final Year Project, School projects, Mini projects & Marketing</h3>
+                <p>Enquiry now!</p>
+            </div>
+
+            <a href="contact.html" class="cta-btn">CONTACT US</a>
+        </div>
+    </section>
+
+  <!-- FOOTER -->
+
+        <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Logo Section -->
+            <div class="footer-box fade-in">
+                <img src="images/title.png" class="footer-logo" alt="Logo">
+                <h3 class="animate__animated animate__backInDown">
+                    <spam style="color: rgb(36, 36, 91);">Grad</spam>-<spam style="color: gold;">Aura</spam>
+                </h3>
+                <p>Your trusted place for academic & IT projects.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box slide-up">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-box slide-up">
+                <h4>Contact</h4>
+                <p><strong>Email:</strong> projectcenter@gmail.com</p>
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Location:</strong> Tamil Nadu, India</p>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="footer-box slide-right">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom fade-in">
+            © 2025 Project Center | All Rights Reserved.
+        </div>
+    </footer>
+        <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
